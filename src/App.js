@@ -1,17 +1,27 @@
-import React from 'react';
-import Header from './components/common/Header';
+import React, { useState, useCallback } from 'react';
+import { GlobalStyle } from './theme/GlobalStyle';
+import HeaderContainer from './components/container/HeaderContainer';
 import { Route, Routes } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import MainPage from './pages/MainPage';
 import NotFoundPage from './pages/NotFoundPage';
+import * as themeObject from './theme/theme';
 
 const App = () => {
+  const [darkmode, setDarkmode] = useState('lightTheme');
+
+  const toggleTheme = useCallback(() => {
+    const changeTheme = darkmode === 'lightTheme' ? 'darkTheme' : 'lightTheme';
+    setDarkmode(changeTheme);
+  }, [darkmode]);
+
   return (
     <>
+      <GlobalStyle theme={themeObject[darkmode]} />
       <Helmet>
         <title>Leeheeae</title>
       </Helmet>
-      <Header />
+      <HeaderContainer toggleTheme={toggleTheme} />
       <Routes>
         <Route path="/" element={<MainPage />} />
         {/* NotFound */}

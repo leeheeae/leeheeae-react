@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import styled from 'styled-components';
-import DarkMode from './DarkMode';
+import ThemeToggle from './ThemeToggle';
 
 const HeaderBlock = styled.header`
   position: fixed;
-  top: 25px;
+  top: 20px;
   width: 100%;
   padding: 0 1.5rem;
 `;
@@ -12,6 +12,7 @@ const HeaderBlock = styled.header`
 const HeaderContainer = styled.div`
   display: flex;
   justify-content: space-between;
+  align-items: center;
 `;
 
 const Nav = styled.nav`
@@ -32,12 +33,12 @@ const Logo = styled.div`
   font-weight: 800;
 `;
 
-const Header = () => {
+const Header = ({ toggleTheme }) => {
   return (
     <HeaderBlock>
       <HeaderContainer>
         <Logo>LEEHEEAE👋🏻</Logo>
-        <DarkMode />
+        <ThemeToggle toggle={toggleTheme} />
       </HeaderContainer>
     </HeaderBlock>
   );
