@@ -8,10 +8,10 @@ import NotFoundPage from './pages/NotFoundPage';
 import * as themeObject from './theme/theme';
 
 const App = () => {
-  const [darkmode, setDarkmode] = useState('lightTheme');
+  const [darkmode, setDarkmode] = useState('light');
 
   const toggleTheme = useCallback(() => {
-    const changeTheme = darkmode === 'lightTheme' ? 'darkTheme' : 'lightTheme';
+    const changeTheme = darkmode === 'light' ? 'dark' : 'light';
     setDarkmode(changeTheme);
   }, [darkmode]);
 
