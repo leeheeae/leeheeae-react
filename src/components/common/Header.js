@@ -33,12 +33,12 @@ const Logo = styled.div`
   font-weight: 800;
 `;
 
-const Header = ({ toggleTheme }) => {
+const Header = ({ toggleTheme, mode }) => {
   return (
     <HeaderBlock>
       <HeaderContainer>
         <Logo>LEEHEEAE👋🏻</Logo>
-        <ThemeToggle toggle={toggleTheme} />
+        <ThemeToggle toggle={toggleTheme} mode={mode} />
       </HeaderContainer>
     </HeaderBlock>
   );
