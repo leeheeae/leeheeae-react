@@ -19,21 +19,49 @@ const MainText = styled.div`
 
   h3 {
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 400;
   }
 
   h1 {
-    font-size: 2.2rem;
-    margin: 10px 0 1rem;
+    font-size: 2.4rem;
+    margin: 10px 0;
   }
 
   h2 {
     font-size: 0.94rem;
-    opacity: 0.6;
+    opacity: 0.7;
     font-weight: 300;
   }
 `;
-const ButtonList = styled.div``;
+const ButtonList = styled.div`
+  margin-top: 30px;
+
+  button {
+    padding: 0.8rem 1rem;
+    border: var(--border-color2);
+    font-size: 0.84rem;
+    border-radius: 3px;
+    transition: 0.3s;
+
+    & + button {
+      margin-left: 8px;
+    }
+
+    &:nth-child(1) {
+      background-color: var(--text-color);
+      color: var(--bg-color);
+    }
+
+    &:nth-child(2) {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+    }
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+`;
 
 const Home = () => {
   return (
