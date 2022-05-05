@@ -1,7 +1,7 @@
 import React from 'react';
 import Home from '../components/main/Home';
 
-const MainPage = () => {
+const MainPage = (props) => {
   return (
     <>
       <Home />
