@@ -16,7 +16,7 @@ const BackgroundBlock = styled.div`
     border-radius: 50%;
     /* background: lightcoral; */
     background: var(--ball-color);
-    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.7);
     opacity: 0.6;
   }
 

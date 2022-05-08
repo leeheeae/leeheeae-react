@@ -6,8 +6,8 @@ import Lnb from './Lnb';
 const HeaderBlock = styled.header`
   position: fixed;
   width: 100%;
-  top: 40px;
-  padding: 0 4rem;
+  padding: 40px 4rem 0;
+  backdrop-filter: blur(2px);
 `;
 
 const HeaderContainer = styled.div`
