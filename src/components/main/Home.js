@@ -18,10 +18,17 @@ const MainText = styled.div`
   text-align: center;
 
   h1 {
-    font-size: 4rem;
+    font-size: 4.4rem;
     font-weight: 800;
-    line-height: 1.3;
-    margin: 0 0 1.5rem;
+    line-height: 1.2;
+    letter-spacing: -1px;
+    margin: 0 0 1.6rem;
+
+    p {
+      color: transparent;
+      text-shadow: none;
+      -webkit-text-stroke: 1px var(--text-color);
+    }
   }
 
   h2 {
@@ -31,14 +38,14 @@ const MainText = styled.div`
   }
 `;
 const ButtonList = styled.div`
-  margin-top: 60px;
+  margin-top: 5rem;
 
   button {
     padding: 1.1rem 2.5rem;
     border: var(--border-color2);
     font-size: 1rem;
     font-weight: 500;
-    border-radius: 3px;
+    border-radius: 4px;
     transition: 0.3s;
 
     & + button {
@@ -67,8 +74,8 @@ const Home = () => {
     <HomeBlock>
       <MainText>
         <h1>
-          A passionate developer
-          <br /> who wants to run together
+          <p>A passionate developer</p>
+          who wants to run together
         </h1>
         <h2>함께 달리고 싶은 열정적 프론트앤드 개발자 이희애입니다.</h2>
       </MainText>

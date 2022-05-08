@@ -12,6 +12,15 @@ html,body {
     font-family: 'Pretendard';
     color: #383838;
 }
+::-moz-selection {
+    background: var(--point-color);
+    color: #fff;
+}
+
+::selection {
+    background: var(--point-color);
+    color: #fff;
+}
 
 a {
     text-decoration: none;

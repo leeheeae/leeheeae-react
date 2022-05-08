@@ -3,8 +3,8 @@ export const light = {
   textColor: '#31302e',
   borderColor: '1px solid #eaeaea',
   borderColor2: '1px solid #ccc',
-  pointColor: '#B8434C',
-  ballColor: '#ECF2F7',
+  pointColor: '#454CAC',
+  ballColor: '#f8f7f4',
   // ballColor: '#ffd167',
 };
 
@@ -13,8 +13,9 @@ export const dark = {
   textColor: '#eee',
   borderColor: '1px solid #2c2d33',
   borderColor2: '1px solid #555',
-  pointColor: '#B8434C',
-  ballColor: '#636157',
+  pointColor: '#454CAC',
+  ballColor: '#848698',
+  // ballColor: '#1E1E22',
 };
 
 export const theme = {

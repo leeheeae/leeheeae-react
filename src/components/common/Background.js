@@ -21,8 +21,8 @@ const BackgroundBlock = styled.div`
   }
 
   .b1 {
-    width: 150px;
-    height: 150px;
+    width: 170px;
+    height: 170px;
   }
 
   .b2 {
@@ -106,16 +106,16 @@ const Background = ({ children }) => {
         <div className="hooks-main">
           <div className="hooks-filter">
             <animated.div
-              class="b1"
-              style={{ transform: pos3.interpolate(trans) }}
+              className="b1"
+              style={{ transform: pos3.to(trans) }}
             />
             <animated.div
-              class="b2"
-              style={{ transform: pos2.interpolate(trans) }}
+              className="b2"
+              style={{ transform: pos2.to(trans) }}
             />
             <animated.div
-              class="b3"
-              style={{ transform: pos1.interpolate(trans) }}
+              className="b3"
+              style={{ transform: pos1.to(trans) }}
             />
           </div>
         </div>
