@@ -17,29 +17,27 @@ const HomeBlock = styled.section`
 const MainText = styled.div`
   text-align: center;
 
-  h3 {
-    font-size: 1rem;
-    font-weight: 400;
-  }
-
   h1 {
-    font-size: 2.4rem;
-    margin: 10px 0;
+    font-size: 3.6rem;
+    font-weight: 800;
+    line-height: 1.3;
+    margin: 0 0 1.5rem;
   }
 
   h2 {
-    font-size: 0.94rem;
-    opacity: 0.7;
-    font-weight: 300;
+    font-size: 1.1rem;
+    opacity: 0.9;
+    font-weight: 400;
   }
 `;
 const ButtonList = styled.div`
-  margin-top: 30px;
+  margin-top: 60px;
 
   button {
-    padding: 0.8rem 1rem;
+    padding: 1.1rem 2.5rem;
     border: var(--border-color2);
-    font-size: 0.84rem;
+    font-size: 1rem;
+    font-weight: 500;
     border-radius: 3px;
     transition: 0.3s;
 
@@ -67,9 +65,14 @@ const Home = () => {
   return (
     <HomeBlock>
       <MainText>
-        <h3>Hello, I'm</h3>
+        {/* <h3>Hello, I'm</h3>
         <h1>LEE HEEAE</h1>
-        <h2>Frontend Developer</h2>
+        <h2>Frontend Developer</h2> */}
+        <h1>
+          A passionate developer
+          <br /> who wants to run together
+        </h1>
+        <h2>함께 달리고 싶은 열정적 프론트앤드 개발자 이희애입니다.</h2>
       </MainText>
       <ButtonList>
         <button>프로젝트 확인하기</button>
