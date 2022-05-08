@@ -6,7 +6,8 @@ export const GlobalStyle = createGlobalStyle`
     --text-color: ${({ theme }) => theme.textColor};
     --border-color: ${({ theme }) => theme.borderColor};
     --border-color2: ${({ theme }) => theme.borderColor2};
-    --point-color:  ${({ theme }) => theme.pointColor};
+    --point-color: ${({ theme }) => theme.pointColor};
+    --ball-color: ${({ theme }) => theme.ballColor};
 }
 
 body {

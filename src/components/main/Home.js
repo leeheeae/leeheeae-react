@@ -18,7 +18,7 @@ const MainText = styled.div`
   text-align: center;
 
   h1 {
-    font-size: 3.6rem;
+    font-size: 4rem;
     font-weight: 800;
     line-height: 1.3;
     margin: 0 0 1.5rem;
@@ -48,6 +48,7 @@ const ButtonList = styled.div`
     &:nth-child(1) {
       background-color: var(--text-color);
       color: var(--bg-color);
+      border: none;
     }
 
     &:nth-child(2) {
@@ -65,9 +66,6 @@ const Home = () => {
   return (
     <HomeBlock>
       <MainText>
-        {/* <h3>Hello, I'm</h3>
-        <h1>LEE HEEAE</h1>
-        <h2>Frontend Developer</h2> */}
         <h1>
           A passionate developer
           <br /> who wants to run together

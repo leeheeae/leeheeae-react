@@ -19,3 +19,5 @@
    - 지금 프로젝트는 Header 컴포넌트 안에 있기 때문에 props로 mdoe, theme, toggleTheme 핸들러를 내려줌
 4. useEffect를 이용하여 theme의 값이 변경될 때 마다 setItem을 이용하여 로컬스토리지에 갱신
 5. ThemeToggle 컴포넌트에서 받아온 값을 이용하여 상태마다 다른 액션 보여주기
+
+https://codesandbox.io/s/ppxnl191zx?file=/src/index.js:1228-1252

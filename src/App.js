@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useEffect } from 'react';
+import React, { useState, useCallback, useEffect, useRef } from 'react';
 import { GlobalStyle } from './theme/GlobalStyle';
 import Header from './components/common/Header';
 import { Route, Routes } from 'react-router-dom';
@@ -6,6 +6,7 @@ import { Helmet } from 'react-helmet-async';
 import MainPage from './pages/MainPage';
 import NotFoundPage from './pages/NotFoundPage';
 import * as themeObject from './theme/theme';
+// import Background from './components/common/Background';
 
 const App = () => {
   const getInitialTheme = useCallback(() => {
@@ -29,7 +30,7 @@ const App = () => {
   }, [theme]);
 
   return (
-    <>
+    <div>
       <GlobalStyle theme={themeObject[theme]} />
       <Helmet>
         <title>Leeheeae</title>
@@ -44,7 +45,7 @@ const App = () => {
         {/* NotFound */}
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
-    </>
+    </div>
   );
 };
 

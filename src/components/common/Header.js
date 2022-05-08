@@ -6,16 +6,22 @@ import Lnb from './Lnb';
 const HeaderBlock = styled.header`
   position: fixed;
   width: 100%;
-  /* top: 20px;
-  padding: 0 1.5rem; */
-  top: 30px;
-  padding: 0 3rem;
+  top: 40px;
+  padding: 0 4rem;
 `;
 
 const HeaderContainer = styled.div`
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: auto;
+  }
 `;
 
 const Logo = styled.div`
@@ -28,7 +34,9 @@ const Header = ({ toggleTheme, mode, theme }) => {
     <HeaderBlock>
       <HeaderContainer>
         <Logo>LEEHEEAE👋🏻</Logo>
-        <Lnb />
+        <nav>
+          <Lnb />
+        </nav>
         <ThemeToggle toggle={toggleTheme} mode={mode} theme={theme} />
       </HeaderContainer>
     </HeaderBlock>

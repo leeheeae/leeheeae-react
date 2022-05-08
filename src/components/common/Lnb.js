@@ -57,8 +57,6 @@ const lnbMenu = [
 const Lnb = () => {
   const { pathname } = useLocation();
 
-  console.log(pathname);
-
   return (
     <LnbBlock>
       {lnbMenu.map((menu) => (

@@ -11,6 +11,8 @@ import { HelmetProvider } from 'react-helmet-async';
 import { Provider } from 'react-redux';
 import store from './store';
 
+import Background from './components/common/Background';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
@@ -18,7 +20,9 @@ root.render(
     <Provider store={store}>
       <BrowserRouter basename={process.env.PUBLIC_URL}>
         <HelmetProvider>
-          <App />
+          <Background>
+            <App />
+          </Background>
         </HelmetProvider>
       </BrowserRouter>
     </Provider>
