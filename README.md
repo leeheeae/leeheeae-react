@@ -24,13 +24,6 @@
 - Project
 - Contact
 
-### 기능
-
-- 다크모드
-- 헤더 메뉴 클릭 시 해당 section으로 이동
-- 마우스 따라다니는 공
-- ***
-
 ### 다크모드 설정하기
 
 `useState`, `useEffect`

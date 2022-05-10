@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import ThemeToggle from './ThemeToggle';
-// import Lnb from './Lnb';
 import Menu from './Menu';
+import { Lotation } from '../../config/data';
 
 const HeaderBlock = styled.header`
   position: fixed;
@@ -27,22 +27,29 @@ const HeaderContainer = styled.div`
 `;
 
 const Logo = styled.div`
+  display: flex;
+  align-items: flex-end;
   font-size: 1.4rem;
   font-weight: 800;
+  cursor: pointer;
+
+  & span {
+    margin-bottom: 4px;
+    transform-origin: bottom;
+  }
+  &:hover span {
+    display: inline-block;
+    animation: ${Lotation} 0.3s linear infinite alternate;
+  }
 `;
 
-const Header = ({
-  toggleTheme,
-  mode,
-  theme,
-  activeMenu,
-  setActiveMenu,
-  onClick,
-}) => {
+const Header = ({ toggleTheme, mode, theme, activeMenu, onClick }) => {
   return (
     <HeaderBlock>
       <HeaderContainer>
-        <Logo>LEEHEEAE👋🏻</Logo>
+        <Logo onClick={() => onClick('Home')}>
+          LEEHEEAE<span>👋🏻</span>
+        </Logo>
         <nav>
           <Menu activeMenu={activeMenu} onClick={onClick} />
         </nav>

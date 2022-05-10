@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import { SectionBlock } from '../common/Section';
 import { BsMailbox, BsGithub, BsFillPhoneVibrateFill } from 'react-icons/bs';
+import { Lotation } from '../../config/data';
 
 const ContactBlock = styled(SectionBlock)`
   .title-box {
@@ -11,6 +12,16 @@ const ContactBlock = styled(SectionBlock)`
       font-size: 3rem;
       font-weight: 600;
       line-height: 1.5;
+      position: relative;
+
+      & span {
+        display: inline-block;
+        animation: ${Lotation} 0.3s linear infinite alternate;
+        position: absolute;
+        right: -60px;
+        margin-bottom: 4px;
+        transform-origin: bottom;
+      }
     }
     p {
       font-size: 1.3rem;
@@ -81,7 +92,9 @@ const Contact = ({ activeMenu }) => {
   return (
     <ContactBlock ref={ref}>
       <div className="title-box">
-        <h1>I look forward to hearing from you 🖐🏻</h1>
+        <h1>
+          I look forward to hearing from you <span>🖐🏻</span>
+        </h1>
         <p>함께 성장해고자 하는 곳의 연락을 기다립니다. </p>
       </div>
       <div className="btn-list">

@@ -6,6 +6,7 @@ import bigboss from '../assets/images/project_bigboss.jpg';
 import caros from '../assets/images/project_caros.jpg';
 import violating from '../assets/images/project_violating.jpg';
 import monitoring from '../assets/images/project_monitoring.jpg';
+import { keyframes } from 'styled-components';
 
 export const Projects = [
   {
@@ -79,3 +80,12 @@ export const Projects = [
 ];
 
 export const menu = ['Home', 'About', 'Skill', 'Project', 'Contact'];
+
+export const Lotation = keyframes`
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+     transform: rotate(45deg);
+  }
+`;
