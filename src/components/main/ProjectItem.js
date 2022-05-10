@@ -8,6 +8,7 @@ const ProejctItemBlock = styled.div`
   align-items: center;
 
   .text-box {
+    width: 38vh;
     .tag {
       /* font-size: 1.5vw; */
       font-size: 1.4rem;
@@ -75,9 +76,11 @@ const ProjectItem = ({ project }) => {
               <div className="btn">Gitgub</div>
             </a>
           )}
-          <a href={project.link.view} target="_blank" rel="noreferrer">
-            <div className="btn">View</div>
-          </a>
+          {project.link.view && (
+            <a href={project.link.view} target="_blank" rel="noreferrer">
+              <div className="btn">View</div>
+            </a>
+          )}
         </div>
       </div>
       <div className="img-box"></div>
