@@ -6,6 +6,7 @@ const ProejctItemBlock = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 4rem;
 
   .text-box {
     width: 38vh;
@@ -60,6 +61,15 @@ const ProejctItemBlock = styled.div`
     max-height: 71.81vw;
     text-align: left;
     background-color: #ccc;
+    box-shadow: 0 5px 10px rgb(100 100 100 / 15%),
+      0 2px 4px rgb(100 100 100 / 15%);
+    overflow: hidden;
+
+    img {
+      display: block;
+      object-fit: cover;
+      width: 100%;
+    }
   }
 `;
 
@@ -83,7 +93,7 @@ const ProjectItem = ({ project }) => {
           )}
         </div>
       </div>
-      <div className="img-box"></div>
+      <div className="img-box">{project.img}</div>
     </ProejctItemBlock>
   );
 };

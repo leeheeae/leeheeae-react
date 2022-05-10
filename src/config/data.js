@@ -1,55 +1,79 @@
+import portfolio from '../assets/images/project_portfolio.jpg';
+import lol from '../assets/images/project_lol.jpg';
+import su from '../assets/images/project_su.jpg';
+import onepoint from '../assets/images/project_onepoint.jpg';
+import bigboss from '../assets/images/project_bigboss.jpg';
+import caros from '../assets/images/project_caros.jpg';
+import violating from '../assets/images/project_violating.jpg';
+import monitoring from '../assets/images/project_monitoring.jpg';
+
 export const Projects = [
+  {
+    tag: 'PortFolio',
+    title: '이희애 PortFolio',
+    description: '#React #Redux ',
+    link: {
+      github: 'https://github.com/leeheeae/leeheeae-react',
+      view: 'https://leeheeae.github.io/lol-search-react/',
+    },
+    img: <img src={portfolio} alt="portfolio-view" />,
+  },
   {
     tag: 'Toy Proejct',
     title: 'LOL 전적 검색 사이트',
-    description: '리그오브레전드 게임의 전적검색/챔피언정보 확인',
+    description: '#반응형웹 #React #Redux',
     link: {
       github: 'https://github.com/leeheeae/lol-search-react',
       view: 'https://leeheeae.github.io/lol-search-react/',
     },
-    img: '',
+    img: <img src={lol} alt="lol-view" />,
   },
   {
     tag: 'Renewal',
     title: '에스유소프트 사이트(리뉴얼)',
-    description:
-      '(주)에스유소프트의 운영되고 있는 전체 사이트 통합 작업 및 리뉴얼 프로젝트',
+    description: ' #반응형웹 #HTML #CSS #Vanila JS',
     link: {
       view: 'https://www.linux.kr/g5/',
     },
-    img: '',
+    img: <img src={su} alt="su-view" />,
   },
   {
     tag: 'Renewal',
     title: '원포인트 회사 사이트',
-    description: '원포인트 회사 자사 홈페이지 리뉴얼 제작',
+    description: ' #HTML #CSS #Vanila JS',
     link: {
       view: 'http://one-point.co.kr/',
     },
-    img: '',
+    img: <img src={onepoint} alt="onepoint-view" />,
   },
   {
     tag: 'New Project',
     title: '빅보스 모터사이클 커뮤니티/오픈마켓 솔루션',
-    description:
-      '모터 사이클을 좋아하는 사람들이 모여 이용할 수 있는 커뮤니티/오픈마켓 사이트 제작',
+    description: '#HTML #CSS #JQuery',
     link: {
       view: 'http://www.big-boss.co.kr/',
     },
-    img: '',
+    img: <img src={bigboss} alt="bigboss-view" />,
+  },
+  {
+    tag: 'New Project',
+    title: '캐로스 중국지사',
+    description: '#HTML #CSS',
+    link: {},
+    img: <img src={caros} alt="caros-view" />,
+  },
+  {
+    tag: 'Solution',
+    title: '위반건축물 관리 솔루션',
+    description: '#HTML #CSS #JQuery',
+    link: {},
+    img: <img src={violating} alt="violating-view" />,
   },
   {
     tag: 'Solution',
     title: '안전모니터링 솔루션',
-    description: '스마트 팩토리 운영에 필요한 안전 모니터링 웹 솔루션 제작',
+    description: '#HTML #CSS #JQuery',
     link: {},
-    img: '',
-  },
-  {
-    tag: 'Solution',
-    title: '안전모니터링 솔루션',
-    description: '스마트 팩토리 운영에 필요한 안전 모니터링 웹 솔루션 제작',
-    link: {},
-    img: '',
+    img: <img src={monitoring} alt="monitoring-view" />,
   },
 ];
