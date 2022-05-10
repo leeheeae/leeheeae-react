@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import { SectionBlock } from '../common/Section';
 import {
@@ -180,7 +180,7 @@ const Tools = ({ tool }) => {
       <ul className="tools-list">
         {tool.tools.map((t) => (
           <li key={t.name}>
-            <div class="icon">{t.icon}</div>
+            <div className="icon">{t.icon}</div>
             <p>{t.name}</p>
           </li>
         ))}
@@ -189,9 +189,17 @@ const Tools = ({ tool }) => {
   );
 };
 
-const Skill = () => {
+const Skill = ({ activeMenu }) => {
+  const ref = useRef(null);
+
+  useEffect(() => {
+    if (activeMenu !== 'Skill') return;
+
+    ref.current.scrollIntoView({ behavior: 'smooth' });
+  }, [activeMenu]);
+
   return (
-    <SkillBlock>
+    <SkillBlock ref={ref}>
       <MainText>
         <h1>
           <span>새로운 경험을 </span> <br />

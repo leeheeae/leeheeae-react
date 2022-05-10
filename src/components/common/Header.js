@@ -1,11 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 import ThemeToggle from './ThemeToggle';
-import Lnb from './Lnb';
+// import Lnb from './Lnb';
+import Menu from './Menu';
 
 const HeaderBlock = styled.header`
   position: fixed;
   width: 100%;
+  min-width: 968px;
   padding: 40px 4rem 0;
   backdrop-filter: blur(2px);
 `;
@@ -29,13 +31,20 @@ const Logo = styled.div`
   font-weight: 800;
 `;
 
-const Header = ({ toggleTheme, mode, theme }) => {
+const Header = ({
+  toggleTheme,
+  mode,
+  theme,
+  activeMenu,
+  setActiveMenu,
+  onClick,
+}) => {
   return (
     <HeaderBlock>
       <HeaderContainer>
         <Logo>LEEHEEAE👋🏻</Logo>
         <nav>
-          <Lnb />
+          <Menu activeMenu={activeMenu} onClick={onClick} />
         </nav>
         <ThemeToggle toggle={toggleTheme} mode={mode} theme={theme} />
       </HeaderContainer>

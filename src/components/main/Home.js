@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import { SectionBlock } from '../common/Section';
 
@@ -43,8 +43,8 @@ const ButtonList = styled.div`
     }
 
     &:nth-child(1) {
-      background-color: var(--text-color);
-      color: var(--bg-color);
+      background-color: var(--point-color);
+      color: #fff;
       border: none;
     }
 
@@ -59,9 +59,17 @@ const ButtonList = styled.div`
   }
 `;
 
-const Home = () => {
+const Home = ({ activeMenu }) => {
+  const ref = useRef(null);
+
+  useEffect(() => {
+    if (activeMenu !== 'Home') return;
+
+    ref.current.scrollIntoView({ behavior: 'smooth' });
+  }, [activeMenu]);
+
   return (
-    <HomeBlock>
+    <HomeBlock ref={ref}>
       <MainText>
         <h1>
           <p>A passionate developer</p>

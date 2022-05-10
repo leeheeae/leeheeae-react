@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 
 export const SectionBlock = styled.section`
-  max-width: 968px;
-  width: 100%;
+  width: 968px;
   height: 100%;
   padding: 4.5rem 0 1rem;
   margin: auto;

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import { SectionBlock } from '../common/Section';
 import ProjectItem from './ProjectItem';
@@ -13,6 +13,7 @@ const ProjectBlock = styled(SectionBlock)`
 
 const MainText = styled.div`
   text-align: center;
+  margin-bottom: 3rem;
   h1 {
     font-size: 4rem;
     font-weight: 700;
@@ -37,9 +38,17 @@ const MainText = styled.div`
   }
 `;
 
-const Project = () => {
+const Project = ({ activeMenu }) => {
+  const ref = useRef(null);
+
+  useEffect(() => {
+    if (activeMenu !== 'Project') return;
+
+    ref.current.scrollIntoView({ behavior: 'smooth' });
+  }, [activeMenu]);
+
   return (
-    <ProjectBlock>
+    <ProjectBlock ref={ref}>
       <MainText>
         <h1>
           <span>featured</span> Projects
@@ -47,7 +56,7 @@ const Project = () => {
       </MainText>
       <div className="project-list">
         {Projects.map((info) => (
-          <ProjectItem project={info} />
+          <ProjectItem project={info} key={info.title} />
         ))}
       </div>
     </ProjectBlock>

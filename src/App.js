@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useEffect, useRef } from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
 import { GlobalStyle } from './theme/GlobalStyle';
 import Header from './components/common/Header';
 import { Route, Routes } from 'react-router-dom';
@@ -9,6 +9,7 @@ import * as themeObject from './theme/theme';
 // import Background from './components/common/Background';
 
 const App = () => {
+  //darkmode
   const getInitialTheme = useCallback(() => {
     let theme = window.localStorage.getItem('app_theme');
     const INVALID_THEME = theme !== 'light' && theme !== 'dark';
@@ -29,8 +30,15 @@ const App = () => {
     window.localStorage.setItem('app_theme', theme);
   }, [theme]);
 
+  //nav
+  const [activeMenu, setActiveMenu] = useState('Home');
+
+  const onClick = (name) => {
+    setActiveMenu(name);
+  };
+
   return (
-    <div>
+    <div id="app">
       <GlobalStyle theme={themeObject[theme]} />
       <Helmet>
         <title>Leeheeae</title>
@@ -39,9 +47,11 @@ const App = () => {
         toggleTheme={toggleTheme}
         mode={theme}
         theme={themeObject[theme]}
+        activeMenu={activeMenu}
+        onClick={onClick}
       />
       <Routes>
-        <Route path="/" element={<MainPage />} />
+        <Route path="/" element={<MainPage activeMenu={activeMenu} />} />
         {/* NotFound */}
         <Route path="*" element={<NotFoundPage />} />
       </Routes>

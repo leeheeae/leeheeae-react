@@ -77,3 +77,5 @@ export const Projects = [
     img: <img src={monitoring} alt="monitoring-view" />,
   },
 ];
+
+export const menu = ['Home', 'About', 'Skill', 'Project', 'Contact'];

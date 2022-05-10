@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import { SectionBlock } from '../common/Section';
 
@@ -67,9 +67,17 @@ const ItemBlock = styled.div`
   }
 `;
 
-const About = () => {
+const About = ({ activeMenu }) => {
+  const ref = useRef(null);
+
+  useEffect(() => {
+    if (activeMenu !== 'About') return;
+
+    ref.current.scrollIntoView({ behavior: 'smooth' });
+  }, [activeMenu]);
+
   return (
-    <AboutBlock>
+    <AboutBlock ref={ref}>
       <MainText>
         <h1>
           <span className="point">디자인</span>을 좋아하는 <span>개발자</span>
