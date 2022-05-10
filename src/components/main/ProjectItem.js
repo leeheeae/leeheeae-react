@@ -11,24 +11,27 @@ const ProejctItemBlock = styled.div`
   .text-box {
     width: 38vh;
     .tag {
-      /* font-size: 1.5vw; */
       font-size: 1.4rem;
       font-weight: 400;
     }
     .title {
       display: block;
       margin: 30px 0 0 0;
-      /* font-size: 2.58333vw; */
       font-size: 2.6rem;
       font-weight: 600;
       line-height: 133%;
       letter-spacing: -0.03em;
     }
-    .description {
+    .keyword {
       margin: 1rem 0 0 0;
       opacity: 0.8;
       font-size: 1.1rem;
-      /* font-size: 1.16667vw; */
+      letter-spacing: 0.04375em;
+      line-height: 156%;
+    }
+    .description {
+      margin: 2.2rem 0 4rem;
+      font-size: 1.1rem;
       letter-spacing: 0.04375em;
       line-height: 156%;
     }
@@ -79,6 +82,7 @@ const ProjectItem = ({ project }) => {
       <div className="text-box">
         <h3 className="tag">{project.tag}</h3>
         <h2 className="title">{project.title}</h2>
+        <div className="keyword">{project.keyword}</div>
         <p className="description">{project.description}</p>
         <div className="link-list">
           {project.link.github && (
