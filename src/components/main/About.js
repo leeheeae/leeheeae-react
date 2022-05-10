@@ -36,6 +36,7 @@ const MainText = styled.div`
     font-weight: 400;
   }
 `;
+
 const ItemList = styled.div`
   display: flex;
   justify-content: space-between;
