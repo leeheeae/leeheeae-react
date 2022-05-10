@@ -100,7 +100,7 @@ const ToolsListInfo = [
   {
     name: 'Frontend Tools 🚗',
     comment:
-      '마크업 태그부터 HTTP 통신을 통한 데이터까지 다양한 툴을 이용하여 작업이 가능합니다.',
+      '마크업 태그부터 HTTP를 통한 데이터 통신 등을 다양한 툴로 작업이 가능합니다.',
     tools: [
       {
         name: 'HTML',
@@ -127,7 +127,7 @@ const ToolsListInfo = [
   {
     name: 'Backend Tools 🚓',
     comment:
-      '마크업 태그부터 HTTP 통신을 통한 데이터까지 다양한 툴을 이용하여 작업이 가능합니다.',
+      '간단한 DB 설계 및 Nodejs 라이브러리를 이용한 서버 제작이 가능합니다.',
     tools: [
       {
         name: 'NODE JS',
