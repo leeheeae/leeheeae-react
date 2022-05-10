@@ -51,7 +51,10 @@ const App = () => {
         onClick={onClick}
       />
       <Routes>
-        <Route path="/" element={<MainPage activeMenu={activeMenu} />} />
+        <Route
+          path="/"
+          element={<MainPage activeMenu={activeMenu} onClick={onClick} />}
+        />
         {/* NotFound */}
         <Route path="*" element={<NotFoundPage />} />
       </Routes>

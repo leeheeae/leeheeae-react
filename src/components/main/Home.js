@@ -59,7 +59,7 @@ const ButtonList = styled.div`
   }
 `;
 
-const Home = ({ activeMenu }) => {
+const Home = ({ activeMenu, onClick }) => {
   const ref = useRef(null);
 
   useEffect(() => {
@@ -78,8 +78,8 @@ const Home = ({ activeMenu }) => {
         <h2>함께 달리고 싶은 열정적 프론트앤드 개발자 이희애입니다.</h2>
       </MainText>
       <ButtonList>
-        <button>프로젝트 확인하기</button>
-        <button>email 연락하기</button>
+        <button onClick={() => onClick('Project')}>프로젝트 확인하기</button>
+        <button onClick={() => onClick('Contact')}>연락하기</button>
       </ButtonList>
     </HomeBlock>
   );
