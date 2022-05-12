@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/leeheeae-react/static/css/main.a0aa5377.css",
-    "main.js": "/leeheeae-react/static/js/main.78f87b1e.js",
+    "main.css": "/leeheeae-react/static/css/main.33318335.css",
+    "main.js": "/leeheeae-react/static/js/main.94841034.js",
     "static/js/787.7477d23f.chunk.js": "/leeheeae-react/static/js/787.7477d23f.chunk.js",
     "static/media/Pretendard-Black.woff": "/leeheeae-react/static/media/Pretendard-Black.cf1615e167bc6b1e405e.woff",
     "static/media/Pretendard-ExtraBold.woff": "/leeheeae-react/static/media/Pretendard-ExtraBold.27d9420000d3e530abc5.woff",
@@ -48,12 +48,12 @@
     "static/media/project_portfolio.jpg": "/leeheeae-react/static/media/project_portfolio.e69b2aeb5f24bec15453.jpg",
     "static/media/project_monitoring.jpg": "/leeheeae-react/static/media/project_monitoring.9170f448027ed1795941.jpg",
     "index.html": "/leeheeae-react/index.html",
-    "main.a0aa5377.css.map": "/leeheeae-react/static/css/main.a0aa5377.css.map",
-    "main.78f87b1e.js.map": "/leeheeae-react/static/js/main.78f87b1e.js.map",
+    "main.33318335.css.map": "/leeheeae-react/static/css/main.33318335.css.map",
+    "main.94841034.js.map": "/leeheeae-react/static/js/main.94841034.js.map",
     "787.7477d23f.chunk.js.map": "/leeheeae-react/static/js/787.7477d23f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a0aa5377.css",
-    "static/js/main.78f87b1e.js"
+    "static/css/main.33318335.css",
+    "static/js/main.94841034.js"
   ]
 }
