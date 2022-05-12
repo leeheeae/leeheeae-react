@@ -15,9 +15,10 @@ import {
 } from 'react-icons/si';
 import { RiVuejsFill } from 'react-icons/ri';
 import { FaNodeJs } from 'react-icons/fa';
-import Wavy from '../svg/Wavy';
 
-const SkillBlock = styled(SectionBlock)``;
+const SkillBlock = styled(SectionBlock)`
+  padding-top: 12rem;
+`;
 
 const MainText = styled.div`
   text-align: center;

@@ -9,7 +9,7 @@ const ProejctItemBlock = styled.div`
   margin-bottom: 4rem;
 
   .text-box {
-    width: 38vh;
+    width: 368px;
     .tag {
       font-size: 1.4rem;
       font-weight: 400;
@@ -58,10 +58,8 @@ const ProejctItemBlock = styled.div`
     }
   }
   .img-box {
-    height: 90vh;
-    width: 54.925vh;
-    max-width: 43vw;
-    max-height: 71.81vw;
+    width: 530px;
+    height: 880px;
     text-align: left;
     background-color: #ccc;
     box-shadow: 0 5px 10px rgb(100 100 100 / 15%),

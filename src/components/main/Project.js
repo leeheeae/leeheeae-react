@@ -7,7 +7,7 @@ import { Projects } from '../../config/data';
 const ProjectBlock = styled(SectionBlock)`
   padding-top: 12rem;
   .project-list {
-    width: 100%;
+    width: 1000px;
   }
 `;
 

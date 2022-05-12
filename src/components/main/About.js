@@ -87,10 +87,10 @@ const About = ({ activeMenu }) => {
       </MainText>
       <ItemList>
         <ItemBlock>
-          <div className="emoji">🎨</div>
+          <div className="emoji">🧠</div>
           <div className="text">
             <h3>빠른 이해</h3>
-            UX/UX 디자이너로 웹 제작을 처음 시작했으며, 그 경험을 통해 화면에
+            UI/UX 디자이너로 웹 제작을 처음 시작했으며, 그 경험을 통해 화면에
             보이는 부분들을 쉽게 배우고 이해합니다.
           </div>
         </ItemBlock>
@@ -103,7 +103,7 @@ const About = ({ activeMenu }) => {
           </div>
         </ItemBlock>
         <ItemBlock>
-          <div className="emoji">📅</div>
+          <div className="emoji">💡</div>
           <div className="text">
             <h3>문제 해결</h3>
             다양한 경험을 통해 생기게 되는 문제를 해결하기 위해 꾸준히 고민하고
