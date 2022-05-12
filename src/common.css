@@ -12,6 +12,8 @@ html,body {
     font-family: 'Pretendard';
     color: #383838;
     scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 ::-moz-selection {
     background: var(--point-color);
